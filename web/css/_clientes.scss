@@ -1,0 +1,55 @@
+#clientes {
+	scroll-margin-top: 45px;
+	height: 45vh;
+	background-color: #f3f3f3;
+	padding-top: 5px;
+	margin-top: 10px;
+
+	h2 {
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+
+	.gallery {
+		background: #fafafa;
+
+		img {
+			display: block;
+			height: 200px;
+		}
+	}
+
+	.caption {
+		background: #929292;
+		margin: 0;
+		padding: 10px;
+		text-align: center;
+		color: white;
+	}
+
+	.flickity-page-dots {
+		bottom: -70px;
+	}
+
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 768px) and (max-width: 1600px) {
+		height: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 100%;
+		
+		.gallery { margin-top: 40px; }
+
+		.gallery img {
+			height: 250px;
+		}
+
+		.flickity-page-dots {
+			bottom: -70px;
+		}
+	}
+}

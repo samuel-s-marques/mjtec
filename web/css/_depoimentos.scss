@@ -1,0 +1,68 @@
+#depoimentos {
+	scroll-margin-top: 45px;
+	height: 50vh;
+	background-color: #f3f3f3;
+	padding-top: 5px;
+	margin-top: 10px;
+	padding-bottom: 40px;
+
+	h2 {
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+
+	.depoimentos {
+		background: #fafafa;
+
+		.depoimento {
+			background: #cee2e1;
+			width: 66%;
+			height: 200px;
+			margin-right: 10px;
+			border-radius: 5px;
+			padding: 0 40px;
+
+			#content {
+				&::before {
+					content: "“";
+				}
+				
+				text-align: center;
+				padding: 20px;
+				font-size: 18px;
+
+				&::after {
+					content: "”";
+				}
+			}
+
+			#title {
+				text-align: center;
+			}
+
+			@media screen and (min-width: 768px) and (max-width: 1600px) {
+				height: 220px;
+				padding: 0 20px;
+			}
+		
+			@media screen and (max-width: 768px) {
+				height: 350px;
+				padding: 0 20px;
+			
+				#content {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1600px) {
+		height: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 100%;
+	}
+}

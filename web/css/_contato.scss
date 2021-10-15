@@ -1,0 +1,162 @@
+#contato {
+	scroll-margin-top: 45px;
+	height: 100vh;
+	background-color: #f3f3f3;
+	padding-top: 5px;
+	margin-top: 20px;
+
+	h2 {
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	a {
+		text-decoration: none;
+
+		i {
+			margin-right: 5px;
+			color: black;
+		}
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.row {
+		.column {
+			float: left;
+			width: 50%;
+			margin-top: 6px;
+			padding: 20px;
+
+			img {
+				width: 100%;
+				max-width: 500px;
+				height: auto;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#important {
+				margin-bottom: 20px;
+
+				#icons {
+					margin-top: 15px;
+					margin-bottom: 15px;
+					font-size: 32px;
+					
+					a {
+						text-decoration: none;
+						transition: all 300ms;
+
+						&:hover {
+							font-size: 36px;
+						}
+					}
+				}
+			}
+
+			#message {
+				#whatsapp {
+					margin: 12px;
+				}
+
+				#facebook {
+					margin: 12px;
+				}
+			}
+
+			input[type=text], input[type=email], select {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				margin-top: 6px;
+				margin-bottom: 16px;
+			}
+
+			textarea {
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				margin-top: 6px;
+				margin-bottom: 5px;
+				min-height: 120px;
+				max-height: 400px;
+				resize: vertical;
+			}
+
+			p {
+				color: rgb(102, 102, 102);
+				font-size: 14px !important;
+				font-style: italic;
+				margin-bottom: 10px;
+			}
+		
+			input[type=submit] {
+				background-color: #F6F000;
+				color: black;
+				font-weight: bold;
+				padding: 12px 20px;
+				border: none;
+				cursor: pointer;
+		
+				&:hover {
+					background-color: #FFCF00;
+				}
+			}
+		}
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	@media screen and (min-width: 1600px) {
+		height: 100vh;
+	}
+	
+	@media screen and (min-width: 1200px) and (max-width: 1600px) {
+		height: 100%;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 900px) {
+		height: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 100%;
+
+		.row .column img {
+			width: 100%;
+			max-width: 300px;
+			height: auto;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.row .column, .row .column input[type=submit], .row .column img {
+			width: 100%;
+			margin-top: 0;
+		}
+
+		.row .column p {
+			margin-bottom: 15px;
+			font-size: 15px !important;
+		}
+
+		#important {
+			text-align: center;
+		}
+	}
+}

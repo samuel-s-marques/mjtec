@@ -1,0 +1,83 @@
+#servicos {
+	scroll-margin-top: 45px;
+	height: 50vh;
+	background-color: #f3f3f3;
+	padding-top: 5px;
+	padding-bottom: 40px;
+
+	h2 {
+		text-align: center;
+		margin-top: 25px;
+		margin-bottom: 15px;
+		font-size: 30px;
+	}
+
+	.center > * {
+		word-wrap: break-word;
+		display: block;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width: 40%;
+	}
+
+	.center p {
+		margin-top: 20px;
+	}
+
+	.row {
+		.column {
+			text-align: center;
+			float: left;
+			padding: 10px;
+			width: 50%;
+			
+			h3 {
+				padding-bottom: 10px;
+			}
+
+			ul {
+				list-style-type: none;
+
+				li {
+					margin: 3px 0px 3px 0px;
+				}
+			}
+		}
+	
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+
+	h4 { text-align: center; }
+
+	@media screen and (min-width: 768px) and (max-width: 1600px) {
+		height: 100%;
+	}
+
+	@media screen and (max-width: 768px) {
+		height: 100%;
+
+		.center > * {
+			width: 75%;
+		}
+
+		.center {
+			p {
+				margin-top: 30px;
+			}
+		}
+
+		.row {
+			margin-left: 15px;
+			margin-right: 15px;
+
+			.column {
+				width: 100%;
+			}
+		}
+	}
+}
