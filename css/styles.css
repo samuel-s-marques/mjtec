@@ -602,11 +602,11 @@ body {
 
 #sobre {
   scroll-margin-top: 45px;
-  height: 100vh;
+  height: 100%;
   background-color: #f3f3f3;
   padding-top: 5px;
   margin-top: 10px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 #sobre h2 {
